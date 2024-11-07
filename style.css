@@ -3,12 +3,20 @@ body{
   font-family: 'poppins', sans-serif;
 }
 
-.heading{
+.title{
   font-size: 64px;
   color: #48A300;
   text-align: center;
 }
 
-.heading span{
+.title span{
   color: #61481C;
 }
+
+.app-container{
+  background-color: #fbfbfb;
+  max-width: 660px;
+  margin-inline: auto;
+  border-radius: 15px;
+
+}  
