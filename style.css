@@ -1,0 +1,14 @@
+body{
+  background-color: rgba(73, 163, 0, 0.075);
+  font-family: 'poppins', sans-serif;
+}
+
+.heading{
+  font-size: 64px;
+  color: #48A300;
+  text-align: center;
+}
+
+.heading span{
+  color: #61481C;
+}
