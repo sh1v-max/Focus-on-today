@@ -63,6 +63,29 @@ main{
   color: #FF5151;
 }
 
+.goal-container{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 17px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  padding: 0 22px;
+}
+
+.custom-checkbox{
+  height: 24px;
+  width: 24px;
+  border: 2px solid rgba(97, 72, 28, 0.3);
+  border-radius: 50%;
+  /* display: inline-block; */
+}
+
+.goal-input{
+  /* border: none; */
+  margin-left: 22px;
+  font-family: inherit;
+}
+
 @media (max-width: 750px ){
   .title{
     font-size: 32px;
