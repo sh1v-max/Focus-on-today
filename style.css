@@ -115,6 +115,11 @@ main{
   margin-top: 64px;
 }
 
+.completed .custom-checkbox{
+  background-color: #48A300;
+  border-color: #48A300;
+}
+
 @media (max-width: 750px ){
   .title{
     font-size: 32px;
