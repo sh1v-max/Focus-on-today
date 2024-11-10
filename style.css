@@ -127,8 +127,8 @@ main{
   border-color: #48A300;
 }
 
-.check-icon{
-  display: none;
+.completed .check-icon{
+  display: block;
 }
 
 @media (max-width: 750px ){
