@@ -92,6 +92,10 @@ main{
   justify-content: center;
 }
 
+.check-icon{
+  display: none;
+}
+
 .goal-input{
   border: none;
   outline: none;
