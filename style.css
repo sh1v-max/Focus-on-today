@@ -106,7 +106,8 @@ main{
   font-size: 16px;
   /* background-color: pink; */
   /* flex-grow: 1; */
-  max-width: 100%;
+  width: 100%;
+  font-weight: 500;
 }
 
 .goal-input::placeholder{
@@ -132,6 +133,11 @@ main{
 
 .completed .check-icon{
   display: block;
+}
+
+.completed .goal-input{
+  color: #48A300;
+  text-decoration-line: line-through;
 }
 
 @media (max-width: 750px ){
