@@ -12,7 +12,7 @@ checkBoxList.forEach((checkBox) => {
       checkBox.parentElement.classList.toggle('completed')
     }else{
       // errorLabel.style.display = 'block'
-      progressBar.classList.add('')
+      progressBar.classList.add('show-error')
     }
   } )
 })
