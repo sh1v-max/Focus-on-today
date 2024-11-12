@@ -17,3 +17,9 @@ checkBoxList.forEach((checkBox) => {
   } )
 })
 
+inputField.forEach((input) => {
+  input.addEventListener('focus', () => {
+    progressBar.classList.remove('show-error')
+  })
+})
+

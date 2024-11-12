@@ -52,7 +52,7 @@ main{
 
 .progress-value{
   height: 100%;
-  width: 66%;
+  width: 0;
   background-color: #48A300;
   border-radius: 15px;
   font-weight: 500;
@@ -60,6 +60,10 @@ main{
   color: #FBFBFB;
   display: flex;
   align-items: center;
+  overflow: hidden;
+}
+
+.progress-value span{
   padding-left: 20px;
 }
 
