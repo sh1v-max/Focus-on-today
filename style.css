@@ -67,10 +67,15 @@ main{
   font-size: 12px;
   color: #FF5151;
   margin-top: 12px;
-  margin-left: 180px;
   position: absolute;
   display: none;
+  left: 50%;
+  margin-left: -75px;
   /* bottom: 32px; */
+}
+
+.show-error .error-label{
+  display: block;
 }
 
 .goal-container{
