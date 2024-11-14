@@ -13,13 +13,6 @@ const allQuotes = [
   'Whoa! You just completed all the goals, time for chill :D',
 ]
 
-const bottomQuotes = [
-  'Raise the bar by completing your goals!',
-  'Well begun is half done!',
-  'Just a Step away, keep going!',
-  'Whoa! You just completed all the goals, time for chill :D',
-]
-
 
 // const allGoals = JSON.parse(localStorage.getItem('allGoals')) || {
 //   first: {
@@ -43,8 +36,8 @@ let completedGoalsCount = Object.values(allGoals).filter(
 ).length
 // see the reference image for help
 
-progressValue.style.width = `${completedGoalsCount / 3 * 100}%`
-progressValue.firstElementChild.innerText = `${completedGoalsCount}/3 completed`
+progressValue.style.width = `${completedGoalsCount / inputField.length * 100}%`
+progressValue.firstElementChild.innerText = `${completedGoalsCount}/${inputField.length} completed`
 progressLabel.innerText = allQuotes[completedGoalsCount]
 
 checkBoxList.forEach((checkBox) => {
@@ -55,14 +48,16 @@ checkBoxList.forEach((checkBox) => {
 
     if (allGoalsAdded) {
       checkBox.parentElement.classList.toggle('completed')
+
       progressValue.style.width = '33.333%'
       const inputId = checkBox.nextElementSibling.id //selecting the id of the input field
       allGoals[inputId].completed = !allGoals[inputId].completed
       completedGoalsCount = Object.values(allGoals).filter(
         (goal) => goal.completed
       ).length
-      progressValue.style.width = `${completedGoalsCount / 3 * 100}%`
-      progressValue.firstElementChild.innerText = `${completedGoalsCount}/3 completed`
+
+      progressValue.style.width = `${completedGoalsCount / inputField.length * 100}%`
+      progressValue.firstElementChild.innerText = `${completedGoalsCount}/${inputField.length} completed`
       progressLabel.innerText = allQuotes[completedGoalsCount]
       localStorage.setItem('allGoals', JSON.stringify(allGoals))
     } else {
