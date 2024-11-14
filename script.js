@@ -16,6 +16,9 @@ checkBoxList.forEach((checkBox) => {
     if (allGoalsAdded) {
       checkBox.parentElement.classList.toggle('completed')
       progressValue.style.width = '33.333%'
+      const inputId = checkBox.nextElementSibling.id
+      allGoals[inputId].completed = !allGoals[inputId].completed
+      localStorage.setItem('allGoals', JSON.stringify(allGoals))
     }else{
       // errorLabel.style.display = 'block'
       progressBar.classList.add('show-error')
