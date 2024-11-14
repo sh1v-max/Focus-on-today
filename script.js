@@ -5,13 +5,14 @@ const progressBar = document.querySelector('.progress-bar')
 const progressValue = document.querySelector('.progress-value')
 
 
-const allGoals = {} // empty object to store all goals
+const allGoals = JSON.parse(localStorage.getItem('allGoals')) || {} // empty object to store all goals
 
 checkBoxList.forEach((checkBox) => {
   checkBox.addEventListener('click', (e) => {
     const allGoalsAdded = [...inputField].every(function(input){
       return input.value
     })
+
     if (allGoalsAdded) {
       checkBox.parentElement.classList.toggle('completed')
       progressValue.style.width = '33.333%'
@@ -19,12 +20,26 @@ checkBoxList.forEach((checkBox) => {
       // errorLabel.style.display = 'block'
       progressBar.classList.add('show-error')
     }
-  } )
+  })
 })
 
 inputField.forEach((input) => {
+  input.value = allGoals[input.id].name
+
+  if(allGoals[input.id].completed){
+    input.parentElement.classList.add('completed')
+  }
+  
   input.addEventListener('focus', () => {
     progressBar.classList.remove('show-error')
+  })
+
+  input.addEventListener('input', (e) => {
+    allGoals[input.id] = {
+      name: input.value,
+      completed: false,
+    }
+    localStorage.setItem('allGoals', JSON.stringify(allGoals))
   })
 })
 
