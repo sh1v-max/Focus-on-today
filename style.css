@@ -61,6 +61,7 @@ main{
   display: flex;
   align-items: center;
   overflow: hidden;
+  transition: width 0.5s ease-in-out;
 }
 
 .progress-value span{
