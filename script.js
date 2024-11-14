@@ -4,6 +4,9 @@ const errorLabel = document.querySelector('.error-label')
 const progressBar = document.querySelector('.progress-bar')
 const progressValue = document.querySelector('.progress-value')
 
+
+const allGoals = {} // empty object to store all goals
+
 checkBoxList.forEach((checkBox) => {
   checkBox.addEventListener('click', (e) => {
     const allGoalsAdded = [...inputField].every(function(input){
