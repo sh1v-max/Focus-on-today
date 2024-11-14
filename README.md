@@ -39,5 +39,3 @@ Local storage utilized:
 ## Reference
 I took the reference of this project from:
 - [YouTube](https://www.youtube.com/watch?v=E59DytaXTio&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=86)
-
-`This specific project was solely for my learning purpose and not my own property`
