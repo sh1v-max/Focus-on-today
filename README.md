@@ -18,7 +18,7 @@
 This project uses HTML, CSS, and JavaScript to ensure a seamless experience across all devices.
 
 
-### Here is "Focus on Today" [Live](https://90stwittercard.netlify.app/) link.
+### Here is "Focus on Today" [Live](https://focusontodaybyme.netlify.app/) link.
 
 ## Preview
 <p align="center">
