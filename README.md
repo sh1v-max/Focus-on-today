@@ -1,4 +1,4 @@
-# Focus on Today
+taxed # Focus on Today
 
 "Focus on Today" is a simple kinda to-do app.
 
